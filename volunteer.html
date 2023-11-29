@@ -8,34 +8,44 @@
     <title>Sign up as a Mentor</title>
 </head>
 <body>
-    <nav class="nav">
-        <ul>
-            <li><a href="index.html">Find Mentors</a></li>
-            <li><a href="volunteer.html">Volunteer as Mentor</a></li>
-        </ul>
-    </nav>
+    
+<nav>
+
+    <ul class="mainNav">
+        <li id="volunteer"><a href="volunteer.html">Volunteer as Mentor</a></li>
+        <li id="findMentor">
+            <a href="index.html">Find Mentors</a>
+            <ul class="dropdown">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Cybersecurity</a></li>
+                <li><a href="#">Tech Policy</a></li>
+                <li><a href="#">Data Science</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
   
 
     <form class="volunteerForm">
         <h2>Sign up as a Mentor</h2>
         <div>
             <label for = "name">Full Name</label>
-            <input type="text" name="name" required>
+            <input type="text" id="name" required>
         </div>
         
         <div>
             <label for = "title">Title</label>
-            <input type="text" name="title" required>
+            <input type="text" id="title" required>
         </div>
         
         <div>
             <label for = "email">Email</label>
-            <input type="text" name="email" required>
+            <input type="text" id="email" required>
         </div>
         
-        <div id="details">
+        <div>
             <label for = "details">Tell us more about yourself</label>
-            <textarea name="details" rows="4" required></textarea>
+            <textarea id="details" rows="4" required></textarea>
         </div>
         
         <input type="submit" value="Submit" class="btn btn-secondary" id="submitForm" onclick="signUp()">

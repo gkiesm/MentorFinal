@@ -1,6 +1,5 @@
-nav {
+.mainNav {
     background-color: #3e3c3c;
-    overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
@@ -10,7 +9,6 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
@@ -18,6 +16,7 @@ nav ul {
 
 nav li a {
     display: block;
+    position: relative;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -30,8 +29,21 @@ nav li a:hover {
     color: black;
 }
 
+.dropdown {
+    display: none;
+    min-width: 160px; 
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #3e3c3c;
+}
+
+#findMentor:hover .dropdown {
+    display:inline-block;
+    }
+
 body {
-    padding-top: 80px;
+    padding-top: 100px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }

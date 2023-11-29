@@ -1,3 +1,11 @@
+searchInput.addEventListener("keydown", function (event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.keyCode === 13) {
+        // Perform the search function here
+        recommend();
+    }
+});
+
 function recommend() {
     
     let searchTerm = document.querySelector('.form-control-lg').value.toLowerCase();
@@ -59,13 +67,6 @@ function recommend() {
 
 }
 
-searchInput.addEventListener("keydown", function (event) {
-    // Check if the pressed key is Enter (key code 13)
-    if (event.keyCode === 13) {
-        // Perform the search function here
-        recommend();
-    }
-});
 
 function signUp() {
 
