@@ -1,5 +1,4 @@
 searchInput.addEventListener("keydown", function (event) {
-    // Check if the pressed key is Enter (key code 13)
     if (event.keyCode === 13) {
         recommend();
     }

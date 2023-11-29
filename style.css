@@ -23,7 +23,6 @@ nav li a {
     text-decoration: none;
 }
 
-/* Change link color on hover */
 nav li a:hover {
     background-color: #ddd;
     color: black;
@@ -74,7 +73,7 @@ h4 {
     display: flex;
     flex-direction: column;
     max-width: 400px; 
-    margin: auto; /* Center the form */
+    margin: auto; 
 }
 
 .volunteerForm div {
