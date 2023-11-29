@@ -82,6 +82,13 @@ h1, h2, h4 {
     border-radius: 5px ;
 }
 
-.btn {
+#submitForm {
     margin-top: 8px;
+}
+
+#submitMessage {
+    display: none;
+    font-size: large;
+    text-align: center;
+    margin: 50px;
 }

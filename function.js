@@ -58,3 +58,18 @@ function recommend() {
     }
 
 }
+
+searchInput.addEventListener("keydown", function (event) {
+    // Check if the pressed key is Enter (key code 13)
+    if (event.keyCode === 13) {
+        // Perform the search function here
+        recommend();
+    }
+});
+
+function signUp() {
+
+    document.querySelector(".volunteerForm").style.display = "none";
+    document.querySelector("#submitMessage").style.display = "block";
+    
+};
