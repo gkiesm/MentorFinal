@@ -1,7 +1,6 @@
 searchInput.addEventListener("keydown", function (event) {
     // Check if the pressed key is Enter (key code 13)
     if (event.keyCode === 13) {
-        // Perform the search function here
         recommend();
     }
 });
@@ -41,7 +40,7 @@ function recommend() {
     if (filteredMentors.length > 0) {
         // If mentors are found, display them
 
-        let headerElement = document.createElement("h2");
+        let headerElement = document.createElement("h3");
         headerElement.textContent = (`Mentor results for "${searchTerm}"`);
         resultsContainer.appendChild(headerElement);
 
@@ -60,8 +59,8 @@ function recommend() {
 
     } else {
         // If no mentors are found
-        let resultsElement = document.createElement("h2");
-        resultsElement.textContent = "No mentors found.";
+        let resultsElement = document.createElement("h3");
+        resultsElement.textContent = `No mentors for "${searchTerm}" found.`;
         resultsContainer.appendChild(resultsElement);
     }
 
